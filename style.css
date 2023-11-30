@@ -1,0 +1,1219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+header {
+    height: 100px;
+    padding: 0 200px;
+    position: relative;
+    z-index: 2;
+}
+
+.header_inner {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_menu {
+    display: flex;
+}
+
+.header_search {
+    margin-right: 30px;
+}
+
+.header_theme {
+    padding-top: 10px;
+}
+
+.header_logo {
+    font-size: 30px;
+    color: white;
+    font-weight: 900;
+}
+
+.search {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-image: url(https://static.thenounproject.com/png/101791-200.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: right center;
+    padding-right: 45px;
+    font-size: 16px;
+}
+
+ 
+/* DROPDOWN  */
+.dropdown {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.dropdown:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+    border: none;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.03);
+
+}
+
+.btn-secondary.dropdown-toggle {
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.03);
+    text-align: center;
+
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item a {
+    font-size: 20px;
+    font-weight: 600;
+    background: #ff6600;
+    display: block;
+    color: #fff;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.dropdown-item a:hover {
+    color: #ff6600;
+    transition: all 0.5s;
+}
+
+.dropdownMenuButton {
+    outline: none;
+    border: none;
+    background: #ff6600;
+    text-align: center;
+    color: white;
+    font-size: 1.95em;
+    padding: 0 8px;
+}
+
+.fa-xl {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: 50%/100% 100% no-repeat;
+    border: none;
+}
+
+/* carousel */
+.bg {
+    /* background-image: url(Diner/banner1.jpg); */
+    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
+        url(Diner/banner1.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    padding-top: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.bg_title {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.bg_content {
+    color: white;
+}
+
+.bg_btn {
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    margin-top: 30px;
+    color: white;
+    font-weight: 800;
+    background: transparent;
+}
+
+.bg_btn:hover {
+    color: #ff6600;
+    background: white;
+    transition: 0.4s ease;
+}
+
+/* About */
+.about {
+    height: 400px;
+    margin-top: 600px;
+    padding: 100px 100px 100px 150px;
+}
+
+@media screen and(min-width: 1500px) {
+    .about {
+        height: 300px;
+    }
+}
+
+@media screen and(min-width: 1500px) {
+    .about_content2 {
+        height: 300px;
+        padding-left: 5px;
+    }
+}
+
+.about_inner {
+    display: flex;
+    height: 450px;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+}
+
+.about_content1,
+.about_content2 {
+    display: inline-block;
+    line-height: 1;
+    margin-right: 50px;
+}
+
+.about_content2 {
+    margin-left: 5px;
+}
+
+.about_content1 .title {
+    font-family: 'Pacifico', cursive;
+    color: #ff6600;
+    font-size: 20px;
+}
+
+.contentA {
+    font-size: 45px;
+    font-weight: 600;
+
+}
+
+.contentB,
+.contentC {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    color: gray;
+}
+
+@media screen and (min-width: 1459px) {
+    .content2 {
+        display: block;
+
+        margin: 30px 0 30px 5px;
+    }
+}
+
+/* Favourite */
+
+.favourite {
+    display: block;
+    height: 600px;
+    display: flex;
+
+
+}
+
+.favourite_img {
+    background: gray;
+    height: 100%;
+    width: 100%;
+}
+
+.favourite_content {
+    background-color: #ff6600;
+    height: 100%;
+    width: 100%;
+}
+
+.favourite_img {
+    background: url(Diner/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.favourite_content {
+    padding: 60px 100px 60px 60px;
+}
+
+.favourite_content_inner {
+    height: 100%;
+    width: 100%;
+}
+
+.favourite1 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-family: 'Pacifico', cursive;
+    color: rgb(248, 230, 230);
+}
+
+.favourite2 {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.favourite3 {
+    margin-top: 10px;
+    color: #ffdfc9;
+    font-weight: 300;
+    font-size: 19px;
+}
+
+.favourite4 {
+    display: flex;
+    margin-top: 50px;
+}
+
+.favourite4_b {
+    margin-left: 20px;
+}
+
+.favourite_icon {
+    width: 70px;
+    height: 70px;
+    background: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 5px;
+}
+
+.favourite4 p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.favourite4 span {
+    color: #ffdfc9;
+}
+
+.favourite_icon i {
+    color: #ff6600;
+}
+
+.favourite_icon:hover i {
+    color: rgb(213, 210, 12);
+    transition: 0.4s ease;
+}
+
+/* New */
+.new {
+    display: block;
+    clear: both;
+    height: 1500px;
+    background-color: #f7f7f7;
+    padding-top: 150px;
+}
+
+.new p {
+    font-family: 'Pacifico', cursive;
+    color: #ff6600;
+    text-align: center;
+    font-size: 25px;
+}
+
+.new span {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.new_img {
+    display: block;
+    margin: 0 100px;
+    height: 500px;
+    padding: 0 auto;
+}
+
+.new_inner {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .about_inner {
+        padding: 1rem !important;
+    }
+}
+
+.aaa {
+    display: block;
+    margin: 0 100px;
+    margin-bottom: 50px;
+}
+
+.aaa {
+    margin-bottom: 50px;
+}
+
+.img1 {
+    display: inline-block;
+    /* background-image: url(Diner/g1.jpg); */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76)100%),
+        url('Diner/g1.jpg');
+    height: 100%;
+    width: 33.33%;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    padding: 0 10px;
+    margin-right: 20px;
+
+}
+
+.list {
+    list-style: none;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+.img2 {
+    display: inline-block;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76)100%),
+        url('Diner/g2.jpg');
+    height: 100%;
+    width: 33.33%;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    padding: 0 10px;
+    margin-right: 20px;
+}
+
+.img3 {
+    display: inline-block;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76)100%),
+        url('Diner/g3.jpg');
+    height: 100%;
+    width: 33.33%;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    padding: 0 10px;
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 1457px) {
+
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img5,
+    .img6 {
+         
+
+    }
+}
+
+@media screen and (min-width: 2049px) {
+
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img5,
+    .img6 {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+}
+
+
+.img4 {
+    display: inline-block;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76)100%),
+        url('Diner/g4.jpg');
+    height: 100%;
+    width: 33.33%;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    padding: 0 10px;
+    margin-right: 20px;
+
+}
+
+.img5 {
+    display: inline-block;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76)100%),
+        url('Diner/g5.jpg');
+    height: 100%;
+    width: 33.33%;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    padding: 0 10px;
+    margin-right: 20px;
+
+
+}
+
+.img6 {
+    display: inline-block;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76)100%),
+        url('Diner/g6.jpg');
+    height: 100%;
+    width: 33.33%;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    margin-right: 20px;
+
+
+}
+
+.after:hover {
+    opacity: 0.85;
+    transition: all 0.4s ease;
+}
+
+/* order */
+.order {
+    height: 650px;
+    background-color: #f7f7f7;
+    padding: 60px 150px 60px 150px;
+}
+
+.order_inner {
+    height: 100%;
+    width: 100%;
+}
+
+.order_menu2 {
+    margin-top: 30px;
+     
+}
+
+
+.order_menu1,
+.order_menu2 {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+
+.menu1,
+.menu4 {
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+    width: 390px;
+    padding: 50px 40px 50px 40px;
+    margin-right: 30px;
+}
+
+.menu2,
+.menu5 {
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+    width: 390px;
+    padding: 50px 40px 50px 40px;
+    margin-right: 30px;
+}
+
+.menu3,
+.menu6 {
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+    width: 390px;
+    padding: 50px 40px 50px 40px;
+    margin-right: 30px;
+}
+
+.menu_icon {
+    display: flex;
+}
+
+.menu_img {
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+}
+
+.hover:hover .menu_img i {
+    color: white;
+    transition: 0.5s ease;
+}
+
+.hover:hover .menu_img {
+    background-color: #ff6600;
+    transition: 0.5s ease;
+}
+
+.menu_img i {
+    color: #ff6600;
+}
+
+.menu_title {
+    padding-left: 30px;
+}
+
+.menu_content {
+    font-size: 17px;
+}
+
+/* Delicious */
+.delicious {
+    position: relative;
+    height: 500px;
+    background: linear-gradient(rgba(16, 15, 19, 0.6), rgba(16, 15, 19, 0.6)),
+        url(Diner/banner2.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+
+.delicious p {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 44px;
+    color: white;
+    font-weight: 800;
+}
+
+.delicious .div {
+    margin: 0 auto;
+    width: 490px;
+}
+
+.btn1 {
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 800;
+    transition: 0.5s ease;
+}
+
+.btn2 {
+    margin-left: 30px;
+    height: 50px;
+    background: transparent;
+    color: white;
+    background-color: #ff6600;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 16px;
+    border: none;
+    font-weight: 800;
+    transition: 0.5s ease;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: #ff6600;
+}
+
+.btn2:hover {
+    opacity: 0.6;
+}
+
+/* CountUp */
+.countUp {
+    height: 250px;
+    width: 100%;
+    padding: 0 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1580px) {
+
+    .countUp {
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+}
+
+
+.item {
+    height: 100%;
+    background-color: #f7f7f7;
+    width: 250px;
+    transform: translateY(150px);
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+@media screen and (min-width: 991px) {
+
+    .item {
+        margin: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 1630px) {
+
+    .item_content {
+        margin: 0 20px;
+    }
+}
+
+.item:hover {
+    transform: translateY(145px);
+}
+
+.item_img {
+    margin-left: 90px;
+    margin-top: 30px;
+    height: 70px;
+    width: 70px;
+    background-color: #ff6600;
+    border-radius: 50%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.item_img i {
+    color: white;
+}
+
+.item_content {
+    transform: translateY(-90px);
+    text-align: center;
+}
+
+.item_content p {
+    color: black;
+}
+
+/* Video */
+.video {
+    height: 800px;
+    padding-top: 300px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.video_inner {
+    background: linear-gradient(rgba(16, 15, 19, 0.6), rgba(16, 15, 19, 0.6)),
+        url(Diner/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.video_icon {
+    margin: 0 auto;
+    background-color: white;
+    height: 100px;
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.video_icon i {
+    color: #ff6600;
+}
+
+.video_icon::before {
+    content: "";
+    position: absolute;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    animation: play 2s linear infinite;
+    opacity: 0;
+}
+
+.video_icon::after {
+    content: "";
+    position: absolute;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    animation: play 2s linear infinite;
+    opacity: 0;
+    animation-delay: 0.6s;
+}
+
+.video_icon:hover {
+    height: 110px;
+    width: 110px;
+    background-color: #ff6600;
+}
+
+.video_icon:hover i {
+    color: white;
+}
+
+@keyframes play {
+    20% {
+        opacity: 1;
+    }
+
+    40% {
+        transform: scale(0.6);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+/* blog */
+.blog {
+    display: block;
+    width: 100%;
+    background-color: #f7f7f7;
+    margin-top: 40px;
+    height: 950px;
+    padding: 50px 150px 50px 150px;
+}
+
+.p1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff6600;
+    font-family: "Pacifico", cursive;
+}
+
+.p2 {
+    display: block;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+.blog_inner {
+    height: 700px;
+}
+
+.blog_img {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog_content {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog_img1 {
+    background-image: url(Diner/g1.jpg);
+    height: 100%;
+    width: 390px;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+
+.blog_img1 span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-weight: 600;
+}
+
+.blog_img2 span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-weight: 600;
+}
+
+.blog_img3 span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-weight: 600;
+}
+
+.blog_img2 {
+    background-image: url(Diner/g7.jpg);
+    height: 100%;
+    width: 390px;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+
+.blog_img3 {
+    background-image: url(Diner/g5.jpg);
+    height: 100%;
+    width: 390px;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+
+.blog_item1 {
+    width: 390px;
+    height: 200px;
+}
+
+.blog_item1 div {
+    display: flex;
+}
+
+.blog_item1 a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.a1 {
+    margin-right: 20px;
+}
+
+.a2 {
+    padding-top: 5px;
+    margin-right: 100px;
+    color: #232121;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.a3 {
+    padding-top: 5px;
+    color: #232121;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.4s ease;
+}
+
+.a3:hover {
+    color: #ff6600;
+}
+
+.blog_item1 p {
+    padding-top: 40px;
+}
+
+/* slider */
+.slider {
+    height: 700px;
+}
+
+.img_slider {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(Diner/team2.jpg);
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.carousel-indicators li {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #ff6600;
+}
+
+.img_slider1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(Diner/team1.jpg);
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.img_slider2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(Diner/team3.jpg);
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/* FOOTER  */
+
+.footer {
+    display: block;
+    background: black;
+    width: 100%;
+    height: 410px;
+}
+
+.footer .container-fluid {
+    display: block;
+    max-width: 1200px;
+    padding-bottom: 3rem;
+    height: auto;
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding-top: 3rem !important;
+}
+
+.footer__logo {
+    display: inline-block;
+    width: 33.33%;
+    height: 370px;
+    padding-right: 1rem;
+}
+
+.footer__logo a {
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 0;
+}
+
+.footer__logo a:hover {
+    color: #ff6600;
+    transition: all 0.3s;
+}
+
+.footer__logo p {
+    font-size: 17px;
+    line-height: 26px;
+    color: #a5a2a1;
+}
+
+.footer__social {
+    margin-top: 1.5rem;
+}
+
+.footer__social a {
+    margin-right: 10px;
+    color: #ff6600;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.footer__social a:hover {
+    background: #ff6600;
+    color: white;
+    transition: all 0.5s;
+}
+
+.footer__item {
+    display: block;
+    width: 150px;
+    height: 170px;
+}
+
+.footer__item h4 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    position: relative;
+    color: #fff;
+}
+
+.footer__item ul {
+    display: block;
+    list-style: none;
+}
+
+.footer__item li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer__item li a {
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 26px;
+    color: #a5a2a1;
+}
+
+.footer__item li a:hover {
+    color: #ff6600;
+    transition: all 0.3s;
+}
+
+.newsletter {
+    display: block;
+    width: 400px;
+    height: 170px;
+}
+
+.newsletter h4 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.newsletter p {
+    font-size: 17px;
+    line-height: 26px;
+    color: #a5a2a1;
+}
+
+.form {
+    margin-top: 25px;
+    position: relative;
+}
+
+.newsletter input {
+    display: block;
+    padding: 14px 20px;
+    width: 370px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 28px;
+    border: 1px solid transparent;
+    outline: none;
+    width: 100%;
+    color: rgba(22, 28, 45, 0.7);
+    background: #fff;
+    border-radius: 6px;
+}
+
+.newsletter .btn-style {
+    display: block;
+    background: #ff6600;
+    padding: 12px 45px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    transition: all 0.3s;
+    border-radius: 6px;
+    border: 2px solid transparent;
+}
+
+.newsletter .btn-primary:hover {
+    color: #fff;
+    background-color: #ff6600;
+    border: 2px solid #ff6600;
+    opacity: 0.8;
+}
+
+.copyright {
+    display: block;
+    padding: 1.2em 0;
+    width: 100%;
+    height: 60px;
+    background: black;
+    border-top: 1px solid rgb(255 255 255 / 5%);
+}
+
+.copyright .container {
+    text-align: left;
+}
+
+.copyright p {
+    display: inline-block;
+    align-self: center;
+    color: #ddd;
+    font-size: 17px;
+    padding-right: 5px;
+}
+
+.copyright a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.w3l-copyright a:hover {
+    color: #fff;
+}
+
+.copyright__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .container-fluid,
+    .container-fluid-sm,
+    .container-fluid-md,
+    .container-fluid-lg,
+    .container-fluid-xl {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container-fluid,
+    .container-fluid-sm,
+    .container-fluid-md,
+    .container-fluid-lg,
+    .container-fluid-xl {
+        max-width: 720px;
+    }
+}
